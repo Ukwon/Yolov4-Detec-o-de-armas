@@ -29,12 +29,13 @@ Treinamos o modelo com 6000 iterações seguindo as recomendações de Alexey Bo
 # Teste do Modelo
 
 Para teste do modelo é possivel utilizar o arquivo "testandomodelo.py" que abrirá uma janela contendo duas opções de teste, por imagem e video, ou teste por câmera em tempo real (certifique-se de ter uma camera conectada), após a seleção basta clicar no botão de inciar a detecção.
-
-![Compilado de detecções do modelo](data/Resultado01.JPG)
+![Interface de teste](data/interface.png)
 
 as métricas são uma ótima forma de comunicar e observar o progresso do modelo, o resultado adquiridos foram baseados no dataset de teste disponibilizado no seguinte link: [Dataset-Teste](https://drive.google.com/file/d/1yTgxhPvmazCo7W4RN6HoF0ord0lEtYDH/view?usp=sharing). 
-Para facas, o modelo desenvolvido alcançou uma precisão de 90.18%. 
-Para armas de fogo, a precisão atingiu 83.36%.
+
+![Compilado de detecções do modelo](data/Resultado01.JPG)
+**Para facas, o modelo desenvolvido alcançou uma precisão de 90.18%.**
+**Para armas de fogo, a precisão atingiu 83.36%.**
 
 Recall é a proporção de verdadeiros positivos em relação ao total de objetos verdadeiros na imagem, sendo de 0.86, ou seja a métrica está atrelada a quão apto o modelo está para detectar o máximo de objetos suspeitos em relação aos verdadeiramente existentes, o valor obtido deixa margem para uma tentativa de tentar aprimorar o número máximo de detecções, uma vez que detectar o máximo de objetos suspeitos seja o mais viável para prever delitos criminosos.
 
