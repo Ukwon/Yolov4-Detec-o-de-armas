@@ -5,4 +5,4 @@ O desenvolvimento deste protótipo trata-se de uma rede YOLOv4 especialmente tre
 
 # Teste do Modelo
 
-![name-of-you-image](https://imgur.com/wylnShD)
+![name-of-you-image]([https://imgur.com/wylnShD](https://i.imgur.com/wylnShD.jpg)https://i.imgur.com/wylnShD.jpg)
