@@ -28,7 +28,7 @@ Treinamos o modelo com 6000 iterações seguindo as recomendações de Alexey Bo
 
 # Teste do Modelo
 
-Para teste do modelo é possivel utilizar o arquivo "testandomodelo.py" que abrirá uma janela contendo duas opções teste por imagem e video, ou teste por câmera em tempo real
+Para teste do modelo é possivel utilizar o arquivo "testandomodelo.py" que abrirá uma janela contendo duas opções de teste, por imagem e video, ou teste por câmera em tempo real (certifique-se de ter uma camera conectada), após a seleção basta clicar no botão de inciar a detecção.
 
 ![Compilado de detecções do modelo](data/Resultado01.JPG)
 
@@ -48,5 +48,5 @@ Mean Average Precision (mAP@0.50)
 O mAP@0.50 é uma métrica que avalia o desempenho do modelo em diferentes níveis de confiança. O projeto atingiu um mAP@0.50 de 86.77%, significando dizer que 86.77% das predições do modelo atingem uma confiança de pelo menos 50% de certeza quanto ao objeto classificado, o que indica uma alta qualidade nas detecções de objetos suspeitos em diferentes cenários.
 
 ```diff
-- CONSIDERE ALTERAR OS CAMINHOS PASSADOS EM PARAMETRO DENTRO DOS ARQUIVOS DE "treinandomodelo.ipynb" e "testandomodelo.py" caso ocorra algum erro.
+- Considere alterar os caminhos dos arquivos passados por parâmetro dentro do "treinandomodelo.ipynb" e "testandomodelo.py" caso ocorra algum erro.
 ```
