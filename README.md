@@ -7,23 +7,23 @@ O protótipo foi criado em Python e treinado no ambiente Google Colaboratory com
 Para treinamento foi utilizado o código disponibilizado no arquivo "treinandomodelo.ipynb" no Google Colaboratory, é importante considerar o uso do ambiente com a GPU-T4 que agiliza o processo de treinamento. Além disso foi utilizado os seguintes parametros de arquivos:
 dataset de imagens para o treinamento disponibilizado no seguinte link: [Dataset-Treinamento](https://drive.google.com/file/d/10GEQf4JL1khWJ5Kf3sRLDd7JQInAtNdI/view?usp=sharing).
 
-###Arquivo de configuração
+### Arquivo de configuração
 Este arquivo é utilizado para configurar através da alteração de algumas variáveis o número de iterações maximas que serão realizadas pelo modelo, bem como alguns outros parâmetros importantes que devem ser levados em cosideação, para saber mais sobre sugiro que acesse o repositorio do criador da YOLOV4 que contém o passo a passo completo [YOLOV4 Repositório](https://github.com/AlexeyAB/darknet).
 Arquivo de configuração do YOLOV4: yolov4-obj.cfg
 
-###Arquivo Data
+### Arquivo Data
 O arquvivo data é usado para passar o parâmetro de todos os arquivos usados pelo modelo para o treinamento, inclusive o local onde será salvo o arquivo "weights" que é o resultado gerado pelo código após o treinamento.
 Arquivo Data: data/obj.data
 
-###Arquivo Names
+### Arquivo Names
 o arquivo names denota o nomes de cada uma das classes que serão usadas pelo modelo sendo elas faca e arma_de_fogo.
 Arquivo Names: data/obj.names
 
-###Arquivos train e test(txt)
+### Arquivos train e test(txt)
 Este arquivo é utilizado para passar o caminho completo de todas as imagens que serão usadas em treinamento e teste para o modelo.
 Arquivos train e test (txt): data/train.txt e data/test.txt
 
-###Número de Iterações
+### Número de Iterações
 Treinamos o modelo com 6000 iterações seguindo as recomendações de Alexey Bochkovskiy, criador da YOLO, sendo que, deve-se multiplicar o número de classes que deseja detectar por 2000, entretanto o valor resultante deve ser de pelo menos 6000 caso estiver treinando um modelo menor ou igual a 3 classes, que é justamente o nosso caso, onde consideramos usar duas classes sendo facas e armas de fogo. O valor de 6000 iterações foi uma escolha equilibrada que resultou em um modelo de precisão satisfatória.
 
 # Teste do Modelo
