@@ -40,11 +40,11 @@ As métricas são uma ótima forma de comunicar e observar o progresso do modelo
 ![Compilado de detecções do modelo](data/Resultado01.JPG)
 
 ```diff
-+ **Para facas, o modelo desenvolvido alcançou uma precisão de 90.18%.**
++ Para facas, o modelo desenvolvido alcançou uma precisão de 90.18%.
 ```
 
 ```diff
-+ **Para armas de fogo, a precisão atingiu 83.36%.**
++ Para armas de fogo, a precisão atingiu 83.36%.
 ```
 
 Recall é a proporção de verdadeiros positivos em relação ao total de objetos verdadeiros na imagem, sendo de 0.86, ou seja a métrica está atrelada a quão apto o modelo está para detectar o máximo de objetos suspeitos em relação aos verdadeiramente existentes, o valor obtido deixa margem para uma tentativa de tentar aprimorar o número máximo de detecções, uma vez que detectar o máximo de objetos suspeitos seja o mais viável para prever delitos criminosos.
