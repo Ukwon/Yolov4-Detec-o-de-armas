@@ -26,7 +26,7 @@ Arquivos train e test (txt): data/train.txt e data/test.txt
 ### Número de Iterações
 Treinamos o modelo com 6000 iterações seguindo as recomendações de Alexey Bochkovskiy, criador da YOLO, sendo que, deve-se multiplicar o número de classes que deseja detectar por 2000, entretanto o valor resultante deve ser de pelo menos 6000 caso estiver treinando um modelo menor ou igual a 3 classes, que é justamente o nosso caso, onde consideramos usar duas classes sendo facas e armas de fogo. O valor de 6000 iterações foi uma escolha equilibrada que resultou em um modelo de precisão satisfatória.
 
-Após o processo de treinamento é gerado o resultado com os arquivos weights: [Weights](https://github.com/AlexeyAB/darknet).
+Após o processo de treinamento é gerado o resultado com os arquivos weights: [Weights](https://drive.google.com/drive/folders/1fYuqky8Mlj6ZOFlCWsPBD4IMR1zqFYoZ?usp=sharing).
 
 # Teste do Modelo
 
