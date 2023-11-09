@@ -11,13 +11,13 @@ from tkinter import filedialog
 from tkinter import messagebox
 
 # Caminho para o modelo YOLOv4 e seus arquivos de configuração
-model_cfg = "C:/Users/dudum/OneDrive/Documentos/yolov4/yolov4-obj.cfg"
-model_weights = "C:/Users/dudum/OneDrive/Documentos/yolov4/backup/yolov4-obj_6000.weights"
+model_cfg = "./yolov4-obj.cfg"
+model_weights = "./backup/yolov4-obj_6000.weights"
 net = cv2.dnn.readNet(model_weights, model_cfg)
 
 # Carregando nomes das classes
 classes = []
-with open("C:/Users/dudum/OneDrive/Documentos/yolov4/data/obj.names", "r") as f:
+with open("./data/obj.names", "r") as f:
     classes = f.read().strip().split("\n")
 
 # Variável para controlar o estado de envio do email
@@ -62,9 +62,9 @@ def detectar():
     cv2.destroyAllWindows()
 
 # Configuração do e-mail
-email_user = "masqueico901@gmail.com"  # Seu endereço de e-mail Gmail
-email_password = "alpjjnwhiiwcfvtw"  # Sua senha
-email_send = "eduardobromattim@gmail.com"  # Endereço de e-mail de destino
+email_user = " " #endereco de email que sera usado para enviar a notificacao
+email_cod = " "  #código para envio de email por app do gmail
+email_send = " " #endereço de email onde sera enviada a notificacao
 
 # Função para enviar e-mail com a imagem
 def enviar_email(image_path):
@@ -86,7 +86,7 @@ def enviar_email(image_path):
     # Enviar o e-mail
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
-    server.login(email_user, email_password)
+    server.login(email_user, email_cod)
     text = msg.as_string()
     server.sendmail(email_user, email_send, text)
     server.quit()
@@ -157,6 +157,23 @@ def detect_objects(frame):
 # Configuração da janela Tkinter
 root = tk.Tk()
 root.title("Detecção de Objetos")
+
+# Defina as dimensões da janela (largura x altura)
+largura_janela = 400
+altura_janela = 200
+root.geometry(f"{largura_janela}x{altura_janela}")
+
+# Função para centralizar a janela na tela
+def center(root):
+    root.update_idletasks()
+    largura = root.winfo_width()
+    altura = root.winfo_height()
+    x = (root.winfo_screenwidth() // 2) - (largura // 2)
+    y = (root.winfo_screenheight() // 2) - (altura // 2)
+    root.geometry(f"{largura}x{altura}+{x}+{y}")
+
+# Centralize a janela
+center(root)
 
 # Botão para selecionar um arquivo
 select_button = tk.Button(root, text="Selecionar Arquivo", command=selec_arquivo)
