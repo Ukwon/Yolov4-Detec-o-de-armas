@@ -33,13 +33,13 @@ Após o processo de treinamento é gerado o resultado com os arquivos weights: [
 Para teste do modelo é possivel utilizar o arquivo "testandomodelo.py" que abrirá uma janela contendo duas opções de teste, por imagem e video, ou teste por câmera em tempo real (certifique-se de ter uma camera conectada), após a seleção basta clicar no botão de inciar a detecção.
 
 <p align="center">
-  <img src="data/interface.png" />
+  <img src="resultados_testes/interface.png" />
 </p>
 
 ### Métricas
 As métricas são uma ótima forma de comunicar e observar o progresso do modelo, o resultado adquiridos foram baseados no dataset de teste disponibilizado no seguinte link: [Dataset-Teste](https://drive.google.com/file/d/1yTgxhPvmazCo7W4RN6HoF0ord0lEtYDH/view?usp=sharing). 
 
-![Compilado de detecções do modelo](data/Resultado01.JPG)
+![Compilado de detecções do modelo](resultados_testes/Resultado01.JPG)
 
 ```diff
 + Para facas, o modelo desenvolvido alcançou uma precisão de 90.18%.
