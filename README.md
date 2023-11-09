@@ -60,7 +60,9 @@ O Average IoU foi de 72.39%, essa métrica mede o grau de sobreposição entre a
 Mean Average Precision (mAP@0.50)
 O mAP@0.50 é uma métrica que avalia o desempenho do modelo em diferentes níveis de confiança. O projeto atingiu um mAP@0.50 de 86.77%, significando dizer que 86.77% das predições do modelo atingem uma confiança de pelo menos 50% de certeza quanto ao objeto classificado, o que indica uma alta qualidade nas detecções de objetos suspeitos em diferentes cenários.
 
-Para que o sistema de notificação funcione devidamente, certifique-se de passar o parametro de email_user, email_cod e email_send.
+# Notificação de detecção
+
+Para que o sistema de notificação funcione devidamente, certifique-se de passar as informações necessarias por parametro para as variaveis email_user, email_cod e email_send no arquivo "testandomodelo.py".
 
 ```diff
 # Configuração do e-mail
